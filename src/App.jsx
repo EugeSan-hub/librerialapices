@@ -1,15 +1,18 @@
 import Menu from "./components/common/Menu.jsx";
+
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-icons/font/bootstrap-icons.css";
+
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Index from "./components/pages/Index.jsx";
+
 function App() {
   
 
   return (
-    <BrowserRouter>
+    <>
       <Menu></Menu>
-      </BrowserRouter>
+      <Index></Index>
+    </>
   )
 }
 
