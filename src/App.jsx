@@ -1,17 +1,21 @@
-import Menu from "./components/common/Menu.jsx";
-
+// import Menu from "./components/common/Menu.jsx";
+// import Index from "./components/pages/Index.jsx";
+// import Footer from "./components/common/Footer.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import "./App.css";
-import Index from "./components/pages/Index.jsx";
+// import CardProducto from "./components/pages/CardProducto.jsx";
+
+
 
 function App() {
   
 
   return (
     <>
-      <Menu></Menu>
+      {/* <Menu></Menu>
       <Index></Index>
+      <Footer></Footer> */}
+      {/* <CardProducto></CardProducto> */}
     </>
   )
 }
