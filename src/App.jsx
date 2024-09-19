@@ -1,9 +1,12 @@
-// import Menu from "./components/common/Menu.jsx";
-// import Index from "./components/pages/Index.jsx";
-// import Footer from "./components/common/Footer.jsx";
+import Menu from "./components/common/Menu.jsx";
+import Index from "./components/pages/Index.jsx";
+import Footer from "./components/common/Footer.jsx";
+import CardProducto from "./components/pages/CardProducto.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-// import CardProducto from "./components/pages/CardProducto.jsx";
+import Administrador from "./components/pages/Administrador.jsx";
+import FormularioProducto from "./components/pages/FormularioProducto.jsx";
+
 
 
 
@@ -14,9 +17,10 @@ function App() {
     <>
       {/* <Menu></Menu>
       <Index></Index>
-      <Footer></Footer> */}
-      {/* <CardProducto></CardProducto> */}
-    </>
+      <Footer></Footer>
+      <Administrador></Administrador> */}
+      {/* <FormularioProducto></FormularioProducto> */}
+          </>
   )
 }
 
