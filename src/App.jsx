@@ -4,10 +4,9 @@ import Footer from "./components/common/Footer.jsx";
 import CardProducto from "./components/pages/CardProducto.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import Administrador from "./components/pages/Administrador.jsx";
 import FormularioProducto from "./components/pages/FormularioProducto.jsx";
-
-
 
 
 function App() {
@@ -15,11 +14,11 @@ function App() {
 
   return (
     <>
-      {/* <Menu></Menu>
-      <Index></Index>
-      <Footer></Footer>
-      <Administrador></Administrador> */}
+      <Menu></Menu>
+      {/* <Index></Index> */}
+            <Administrador></Administrador>
       {/* <FormularioProducto></FormularioProducto> */}
+      <Footer></Footer>
           </>
   )
 }
