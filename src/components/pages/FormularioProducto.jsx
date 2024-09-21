@@ -1,5 +1,6 @@
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { crearProductoAPI } from "../../helpers/queries";
 
 const FormularioProducto = () => {
     const {
@@ -11,7 +12,9 @@ const FormularioProducto = () => {
   
     const productoValidado = async (producto) => {
       console.log(producto);
-   
+      //pedir a la api crear un producto
+      const respuesta = await crearProductoAPI(producto)
+      console.log(respuesta)
     };
   
     return (

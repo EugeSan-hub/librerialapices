@@ -1,0 +1,24 @@
+{
+  "productos": [
+    {
+      "nombreProducto": "Lapices FaberCastell escolares x 12",
+      "marca": "FaberCastell",
+      "precio": 4000,
+      "imagen": "https://images.pexels.com/photos/68808/pexels-photo-68808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Escritura",
+      "descripcion_breve": "Lápices premium con pigmentos resistentes a la luz",
+      "descripcion_amplia": "Los Faber-Castell Polychromos son lápices de colores profesionales con pigmentos de alta calidad y resistencia a la luz. Su textura cremosa garantiza trazos suaves y colores vibrantes, ideales para técnicas de capas y detalles precisos en el arte",
+      "id": 123
+    },
+    {
+      "nombreProducto": "Felpas",
+      "marca": "Fligo",
+      "precio": "5000",
+      "imagen": "https://images.pexels.com/photos/2327071/pexels-photo-2327071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Resaltador",
+      "descripcion_breve": "Felpas estilo fibra 5mm",
+      "descripcion_amplia": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "id": 124
+    }
+  ]
+}
