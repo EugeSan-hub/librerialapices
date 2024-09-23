@@ -29,6 +29,26 @@
       "descripcion_breve": "acuarelas varias",
       "descripcion_amplia": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "id": 125
+    },
+    {
+      "nombreProducto": "Acuarelas",
+      "marca": "Fligo",
+      "precio": "5000",
+      "imagen": "https://images.pexels.com/photos/5554757/pexels-photo-5554757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Resaltador",
+      "descripcion_breve": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "descripcion_amplia": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "id": 126
+    },
+    {
+      "nombreProducto": "Resaltador",
+      "marca": "Maped",
+      "precio": "5000",
+      "imagen": "https://images.pexels.com/photos/5594285/pexels-photo-5594285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Resaltador",
+      "descripcion_breve": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "descripcion_amplia": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "id": 127
     }
   ]
 }
