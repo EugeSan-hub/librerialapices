@@ -5,10 +5,12 @@ import Administrador from "./components/pages/Administrador.jsx";
 import FormularioProducto from "./components/pages/FormularioProducto.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LogIn from "./components/common/LogIn.jsx";
+<Error></Error>
 import { useState } from "react"; // Importar useState para manejar el estado del modal
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import Error404 from "./components/pages/Error404.jsx";
 
 function App() {
    // Estado para controlar la visibilidad del modal
@@ -38,10 +40,12 @@ function App() {
           element={<FormularioProducto></FormularioProducto>}
         ></Route>
         <Route path="/LogIn" element={<LogIn></LogIn>}></Route>
+        <Route path="/*" element={<Error404></Error404>}></Route>
       </Routes>
       <Footer></Footer>
         {/* Modal para iniciar sesión */}
         <LogIn show={showModal} handleClose={handleClose} />
+        
     </BrowserRouter>
   );
 }
