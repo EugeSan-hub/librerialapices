@@ -6,7 +6,7 @@ import {
   editarProductoAPI,
 } from "../../helpers/queries";
 import Swal from "sweetalert2";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useEffect } from "react";
 
 const FormularioProducto = ({ titulo, estoyCreando }) => {
@@ -19,7 +19,7 @@ const FormularioProducto = ({ titulo, estoyCreando }) => {
   } = useForm();
 
   const { id } = useParams();
-
+const navegacion = useNavigate();
   useEffect(() => {
     //si estoy editando el producto
     if (!estoyCreando) {
