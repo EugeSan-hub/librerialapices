@@ -33,11 +33,11 @@ function App() {
         ></Route>
         <Route
           path="/administrador/crear"
-          element={<FormularioProducto></FormularioProducto>}
+          element={<FormularioProducto titulo={'Nuevo producto'} estoyCreando={true}></FormularioProducto>}
         ></Route>
         <Route
-          path="/administrador/editar"
-          element={<FormularioProducto></FormularioProducto>}
+          path="/administrador/editar/:id"
+          element={<FormularioProducto titulo={'Editar Producto'}  estoyCreando={false}></FormularioProducto>}
         ></Route>
         <Route path="/LogIn" element={<LogIn></LogIn>}></Route>
         <Route path="/*" element={<Error404></Error404>}></Route>

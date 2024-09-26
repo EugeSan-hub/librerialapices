@@ -19,7 +19,18 @@ export const crearProductoAPI = async(productoNuevo)=>{
 //GET
 export const leerProductosAPI = async() =>{
     try {
-        const respuesta= await fetch(URLProductos);
+        const respuesta = await fetch(URLProductos);
+      return respuesta;  
+    } catch (error) {
+        console.error(error)
+        return false; 
+        
+    }
+}
+// GET que devuelve un producto 
+export const obtenerProductoAPI = async(id) =>{
+    try {
+        const respuesta = await fetch(URLProductos+'/'+id);
       return respuesta;  
     } catch (error) {
         console.error(error)
