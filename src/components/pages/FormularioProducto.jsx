@@ -59,7 +59,7 @@ const navegacion = useNavigate();
           text: `El producto ${producto.nombreProducto} no pudo ser creado, intente esta operación en unos minutos.`,
           icon: "error",
         });
-      }
+      } navegacion('/administrador')
     } else {
       //solicitar a la api editar el producto
       const respuesta = await editarProductoAPI(producto, id)

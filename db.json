@@ -11,36 +11,6 @@
       "id": 123
     },
     {
-      "nombreProducto": "Felpas",
-      "marca": "Fligo",
-      "precio": "5000",
-      "imagen": "https://images.pexels.com/photos/2327071/pexels-photo-2327071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Resaltador",
-      "descripcion_breve": "Felpas estilo fibra 5mm",
-      "descripcion_amplia": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "id": 124
-    },
-    {
-      "nombreProducto": "Acuarelas",
-      "marca": "Giotto",
-      "precio": "2500",
-      "imagen": "https://images.pexels.com/photos/5554757/pexels-photo-5554757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Resaltador",
-      "descripcion_breve": "acuarelas varias",
-      "descripcion_amplia": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "id": 125
-    },
-    {
-      "nombreProducto": "Acuarelas",
-      "marca": "Fligo",
-      "precio": "5000",
-      "imagen": "https://images.pexels.com/photos/5554757/pexels-photo-5554757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Resaltador",
-      "descripcion_breve": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "descripcion_amplia": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "id": 126
-    },
-    {
       "nombreProducto": "Resaltador",
       "marca": "Maped",
       "precio": "10000",
@@ -49,6 +19,26 @@
       "descripcion_breve": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "descripcion_amplia": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "id": 127
+    },
+    {
+      "nombreProducto": "Acuarelas",
+      "marca": "Fligo",
+      "precio": "4999",
+      "imagen": "https://images.pexels.com/photos/5554759/pexels-photo-5554759.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Arte",
+      "descripcion_breve": "aaaaaaaaaaaaaaaaaaaaaaaa",
+      "descripcion_amplia": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "id": 128
+    },
+    {
+      "nombreProducto": "Set de pinceles",
+      "marca": "Gadnic",
+      "precio": "34998",
+      "imagen": "https://images.pexels.com/photos/5128181/pexels-photo-5128181.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "categoria": "Arte",
+      "descripcion_breve": "Kit x15 Pinceles para Artistas",
+      "descripcion_amplia": "Kit x15 Pinceles para Artistas Gadnic ART3 Arte y Pintura Estuche Esponja Espátula",
+      "id": 129
     }
   ]
 }
