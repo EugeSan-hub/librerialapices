@@ -5,8 +5,7 @@ import Administrador from "./components/pages/Administrador.jsx";
 import FormularioProducto from "./components/pages/FormularioProducto.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LogIn from "./components/common/LogIn.jsx";
-<Error></Error>
-import { useState } from "react"; // Importar useState para manejar el estado del modal
+import { useState } from "react"; 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -19,11 +18,15 @@ function App() {
    // Funciones para abrir y cerrar el modal
    const handleShow = () => setShowModal(true);
    const handleClose = () => setShowModal(false);
+
+   const usuario= JSON.parse(sessionStorage.getItem('libreria101')) || "";
+   const [usuarioLogueado, setUsuarioLogueado]= useState(usuario);
   return (
    
 
     <BrowserRouter>
-      <Menu handleShow={handleShow}></Menu>
+      <Menu usuarioLogueado={usuarioLogueado}
+        setUsuarioLogueado={setUsuarioLogueado} handleShow={handleShow}></Menu>
 
       <Routes>
         <Route path="/" element={<Index></Index>}></Route>
@@ -39,7 +42,11 @@ function App() {
           path="/administrador/editar/:id"
           element={<FormularioProducto titulo={'Editar Producto'}  estoyCreando={false}></FormularioProducto>}
         ></Route>
-        <Route path="/LogIn" element={<LogIn></LogIn>}></Route>
+         <Route
+          exact
+          path="/login"
+          element={<LogIn handleShow={handleShow}  setUsuarioLogueado={setUsuarioLogueado}></LogIn>}
+        ></Route>
         <Route path="/*" element={<Error404></Error404>}></Route>
       </Routes>
       <Footer></Footer>

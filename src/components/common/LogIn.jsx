@@ -1,16 +1,40 @@
 import { Button, Modal, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { login } from "../../helpers/queries";
+import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
 
-const LogIn = ({ show, handleClose }) => {
+
+const LogIn = ({ show, handleClose, setUsuarioLogueado}) => {
   const {
     register,
     handleSubmit,
     formState: { errors },reset,
   } = useForm();
 
+  const navegacion = useNavigate()
+
   const onSubmit = (data) => {
     console.log(data); 
-      reset();
+      
+  if (login(data))  {
+    Swal.fire({
+      title: "Bienvenido",
+      text: `Ingresaste al panel de administración de libreria101`,
+      icon: "success",
+    });
+    //guardar el usuario en el state
+    setUsuarioLogueado(data.email)
+    //redireccionar al admin 
+    navegacion ('/administrador')
+  }else {
+    Swal.fire({
+      title: "Ocurrio un error",
+      text: `Email o contraseña incorrecta`,
+      icon: "error",
+    });
+  }
+  reset();
   handleClose();
   };
  

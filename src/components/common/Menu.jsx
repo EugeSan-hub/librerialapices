@@ -1,7 +1,18 @@
-import { Navbar, Container, Nav } from "react-bootstrap";
-import { Link, NavLink } from "react-router-dom";
+import { Navbar, Container, Nav, Button } from "react-bootstrap";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
-const Menu= ({ handleShow }) => {
+const Menu = ({ handleShow, setUsuarioLogueado, usuarioLogueado }) => {
+  const navegacion = useNavigate();
+
+  const logout = () => {
+    // quitar el usuario del sessionStorage
+    sessionStorage.removeItem("libreria101");
+    // resetear el estado
+    setUsuarioLogueado("");
+    // redireccionar al inicio
+    navegacion("/");
+  };
+
   return (
     <>
       <Navbar expand="lg" className="bg-primary" data-bs-theme="dark">
@@ -15,11 +26,19 @@ const Menu= ({ handleShow }) => {
               <NavLink end to="/" className="nav-link">
                 Inicio
               </NavLink>
-              <NavLink end to="/Administrador" className="nav-link">
-                Administrador
-              </NavLink>
-              <Nav.Link onClick={handleShow}>Login</Nav.Link>{" "}
-              {/* Botón para abrir el modal */}
+
+              {usuarioLogueado !== "" ? (
+                <>
+                  <NavLink end to="/administrador" className="nav-link">
+                    Administrador
+                  </NavLink>
+                  <Button variant="link" onClick={logout}>
+                    Logout
+                  </Button>
+                </>
+              ) : (
+              <Nav.Link>Login</Nav.Link> 
+              )}
             </Nav>
           </Navbar.Collapse>
         </Container>

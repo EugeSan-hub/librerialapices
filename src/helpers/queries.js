@@ -56,7 +56,6 @@ export const editarProductoAPI = async (productoEditado, id) => {
 };
 
 //DELETE
-//DELETE
 export const borrarProductoAPI = async(id)=>{
     try {
         const respuesta = await fetch(URLProductos+'/'+id,{
@@ -68,3 +67,21 @@ export const borrarProductoAPI = async(id)=>{
         return false;
     }
 }
+
+//Logica login cuando tengamos el backend enviar una solicitud POST
+const userAdmin = {
+    email : "admin@libreria101.com",
+    password: "123Aa123",
+};
+
+export const login = (usuario) => {
+    if (
+        usuario.email=== userAdmin.email &&
+        usuario.password === userAdmin.password
+    ){
+        sessionStorage.setItem("libreria101", JSON.stringify(usuario.email));
+        return true;
+    }else {
+        return false;
+    }
+    };
