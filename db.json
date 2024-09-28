@@ -1,7 +1,7 @@
 {
   "productos": [
     {
-      "nombreProducto": "Lapices FaberCastell escolares x 12",
+      "nombreProducto": "Lapices FaberCastell escolares x 24",
       "marca": "FaberCastell",
       "precio": 4000,
       "imagen": "https://images.pexels.com/photos/68808/pexels-photo-68808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
@@ -43,9 +43,9 @@
     {
       "nombreProducto": "Resaltador",
       "marca": "Maped",
-      "precio": "5000",
+      "precio": "6999",
       "imagen": "https://images.pexels.com/photos/5594285/pexels-photo-5594285.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "categoria": "Resaltador",
+      "categoria": "Escritura",
       "descripcion_breve": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "descripcion_amplia": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
       "id": 127
